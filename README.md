@@ -8,14 +8,13 @@ In the future this project is most likely to be divided into several smaller one
 
 Handles basic library functions and also generates pdf reports when necessary. Feature set still needs to be finalized. Going to implement using:
 
- * Node.js
- * MySQL
+ - Node.js
+ - MySQL
 
 ## Clients
 
 The operating system which is going to be used by the library clients. Users are allowed to visit only a few selected websites in addition to the library system where they can read/download ebooks. Going to implement using:
 
- * Slitaz GNU Linux
- * Mozilla Chromeless
-
-
+ - Slitaz GNU Linux
+ - ~~Mozilla Chromeless~~
+ - Python + QT based _chromeless_ browser
