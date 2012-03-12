@@ -1,0 +1,12 @@
+* { margin:0;padding:0;outline:0;border:none;text-decoration:none;font-weight:normal;line-height:1; }
+
+/* Page */
+	body { background:#333;color:#eee;font: 12px Ubuntu,Candara; }
+
+/* Form */
+	#login-form { display:block;margin:100px auto;width:550px; }
+	#login-form h1 { font-size:150px;display:block;margin:0 0 60px 0; }
+	#login-form input { display:block;font-size:50px;margin:20px 0 20px 50px;color:#333;width:500px;
+				background:#333;border:solid 1px #444;color:#eee; }
+	input#login-submit { float:right;width:200px; }
+	input#login-submit:hover { background:#444;color:#222; };
