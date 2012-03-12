@@ -1,12 +1,16 @@
 * { margin:0;padding:0;outline:0;border:none;text-decoration:none;font-weight:normal;line-height:1; }
 
 /* Page */
-	body { background:#333;color:#eee;font: 12px Ubuntu,Candara; }
+	body { background:#333;color:white;font: 12px Ubuntu,Candara; }
+	::-webkit-input-placeholder { color:#0F6D39; }
+	:-moz-placeholder { color:#0F6D39; }
 
 /* Form */
-	#login-form { display:block;margin:100px auto;width:550px; }
-	#login-form h1 { font-size:150px;display:block;margin:0 0 60px 0; }
-	#login-form input { display:block;font-size:50px;margin:20px 0 20px 50px;color:#333;width:500px;
-				background:#333;border:solid 1px #444;color:#eee; }
-	input#login-submit { float:right;width:200px; }
-	input#login-submit:hover { background:#444;color:#222; };
+	#login-form-wrapper { display:block;margin:100px 0 0 300px;width:550px;height:350px; }
+	#login-form-wrapper h1, #login-spinner-wrapper h1 { font-size:150px;display:block;margin:0 0 60px 0; }
+	#login-form-wrapper input { display:block;font-size:50px;margin:20px 0 20px 50px;width:500px;background:rgba(255,255,255,0.8);color:#0F6D39; }
+	#login-form-wrapper input#login-submit { float:right;width:200px;background:rgba(255,255,255,0.5);color:#0F6D39; }
+	#login-form-wrapper input#login-submit:hover,#login-form-wrapper input:focus { background:rgba(255,255,255,1) }
+	#login-spinner-wrapper { display:none; }
+	#login-error { display:block;background:#5A0A0A;font-size:20px;padding:20px;margin:0 0 0 50px; }
+	#login-error-wrapper { height:100px;display:none }
