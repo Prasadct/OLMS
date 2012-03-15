@@ -2,15 +2,32 @@
 
 /* Page */
 	body { background:#333;color:white;font: 12px Ubuntu,Candara; }
-	::-webkit-input-placeholder { color:#0F6D39; }
-	:-moz-placeholder { color:#0F6D39; }
+	::-webkit-input-placeholder { color:rgba(15,109,57,1); }
+	:-moz-placeholder { color:rgba(15,109,57,1); }
 
 /* Form */
+	#login-wrapper { display:none; }
 	#login-form-wrapper { display:block;margin:100px 0 0 300px;width:550px;height:350px; }
 	#login-form-wrapper h1, #login-spinner-wrapper h1 { font-size:150px;display:block;margin:0 0 60px 0; }
-	#login-form-wrapper input { display:block;font-size:50px;margin:20px 0 20px 50px;width:500px;background:rgba(255,255,255,0.8);color:#0F6D39; }
-	#login-form-wrapper input#login-submit { float:right;width:200px;background:rgba(255,255,255,0.5);color:#0F6D39; }
+	#login-form-wrapper input { display:block;font-size:50px;margin:20px 0 20px 50px;width:500px;background:rgba(255,255,255,0.9);color:rgba(15,109,57,1); }
+	#login-form-wrapper input#login-submit { float:right;width:200px;background:rgba(255,255,255,0.5);color:rgba(15,109,57,1); }
 	#login-form-wrapper input#login-submit:hover,#login-form-wrapper input:focus { background:rgba(255,255,255,1) }
 	#login-spinner-wrapper { display:none; }
 	#login-error { display:block;background:#5A0A0A;font-size:20px;padding:20px;margin:0 0 0 50px; }
 	#login-error-wrapper { height:100px;display:none }
+
+/* User Panel */
+	#panel-wrapper { display:none; }
+	#panel-wrapper #logout-button { display:block;position:absolute;top:0;right:0;padding:5px 10px;background:rgba(255,255,255,1);color:rgba(15,109,57,1); }
+	#panel-wrapper #logout-button:hover { background:rgba(255,255,255,0.2);color:white; }
+	#search-form { margin:50px 0 0 70px; }
+	#search-form input { display:block;font-size:32px;width:500px;background:rgba(255,255,255,0.1);color:white; }
+	#search-form #search-submit { width:0;height:0;overflow:hidden; }
+	#search-results { margin:30px 0 0 70px;font-size:20px; }
+	.result-block.single { height:250px;overflow:hidden; }
+	.result-item { float:left;width:160px;height:200px;padding:0 20px;text-align:center; }
+	.result-item img { max-width:100px;height:100px;margin:15px 0; }
+	.result-item p { font-size:12px; }
+	.result-block-heading { font-size:32px;padding:0 0 0 40px; }
+	.result-block-heading.history { background:transparent url("/styles/login/images/history.png") no-repeat; }
+	.result-block-heading.latest { background:transparent url("/styles/login/images/latest.png") no-repeat; }

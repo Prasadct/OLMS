@@ -13,7 +13,7 @@
 				<div id="login-error-wrapper">
 					<p id="login-error">Login Error</p>
 				</div>
-				<form method="post" action="/user-login" id="login-form">
+				<form method="post" action="/user-login.json" id="login-form">
 					<input name="user" id="login-user" placeholder="Username" />
 					<input name="pass" type="password" id="login-pass" placeholder="Password" />
 					<input type="submit" id="login-submit" />
@@ -21,6 +21,65 @@
 			</div>
 			<div id="login-spinner-wrapper">
 				<h1>Loading</h1>
+			</div>
+		</section>
+		<section id="panel-wrapper">
+			<form method="post" action="/user-logout.json" id="logout-form">
+				<input type="submit" id="logout-button" />
+			</form>
+			<form method="post" action="/search-books.json" id="search-form">
+				<input name="query" id="search-query" placeholder="Search" />
+				<input type="submit" id="search-submit" />
+			</form>
+			<div id="search-results">
+				<div class="result-block single">
+					<h2 class="result-block-heading history">History</h2>
+					<div class="result-item">
+						<img src="/styles/login/images/book.png" alt="My New Really Awesome Book Title" />
+						<p>My New Really Awesome Book Title</p>
+					</div>
+					<div class="result-item">
+						<img src="/styles/login/images/book.png" alt="My New Really Awesome Book Title" />
+						<p>My New Really Awesome Book Title</p>
+					</div>
+					<div class="result-item">
+						<img src="/styles/login/images/book.png" alt="My New Really Awesome Book Title" />
+						<p>My New Really Awesome Book Title</p>
+					</div>
+					<div class="result-item">
+						<img src="/styles/login/images/book.png" alt="My New Really Awesome Book Title" />
+						<p>My New Really Awesome Book Title</p>
+					</div>
+					<div class="result-item">
+						<img src="/styles/login/images/book.png" alt="My New Really Awesome Book Title" />
+						<p>My New Really Awesome Book Title</p>
+					</div>
+					<br style="clear:both" />
+				</div>
+				<div class="result-block single">
+					<h2 class="result-block-heading latest">Latest</h2>
+					<div class="result-item">
+						<img src="/styles/login/images/book.png" alt="My New Really Awesome Book Title" />
+						<p>My New Really Awesome Book Title</p>
+					</div>
+					<div class="result-item">
+						<img src="/styles/login/images/book.png" alt="My New Really Awesome Book Title" />
+						<p>My New Really Awesome Book Title</p>
+					</div>
+					<div class="result-item">
+						<img src="/styles/login/images/book.png" alt="My New Really Awesome Book Title" />
+						<p>My New Really Awesome Book Title</p>
+					</div>
+					<div class="result-item">
+						<img src="/styles/login/images/book.png" alt="My New Really Awesome Book Title" />
+						<p>My New Really Awesome Book Title</p>
+					</div>
+					<div class="result-item">
+						<img src="/styles/login/images/book.png" alt="My New Really Awesome Book Title" />
+						<p>My New Really Awesome Book Title</p>
+					</div>
+					<br style="clear:both" />
+				</div>
 			</div>
 		</section>
 		<footer></footer>
