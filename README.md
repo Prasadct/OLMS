@@ -15,5 +15,6 @@
 
 ## Clients
 The operating system which is going to be used by the library clients. Users are allowed to visit only a few selected websites in addition to the library system.
+
  - Slitaz GNU Linux
  - Python + QT based _chromeless_ browser
